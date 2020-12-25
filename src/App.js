@@ -1,8 +1,8 @@
-import React from 'react';
-import './App.css';
-import Home from './Components/home';
-import Add from './Components/add';
-import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import React from "react";
+import "./App.css";
+import Home from "./Components/Home";
+import Add from "./Components/Add";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import {
   AppBar,
@@ -53,15 +53,14 @@ function App() {
       </div>
       <Router>
         <Switch>
-          <Route exact path='/'>
-            <Home/>
+          <Route exact path="/">
+            <Home />
           </Route>
-          <Route exact path='/add'>
-            <Add/>
+          <Route exact path="/add">
+            <Add />
           </Route>
         </Switch>
       </Router>
-      
     </div>
   );
 }
